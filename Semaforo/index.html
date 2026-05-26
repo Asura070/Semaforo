@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center" style="background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);">
+
+    <!-- Título -->
+    <h1 class="text-white text-3xl font-bold mb-8 drop-shadow-lg">🚦 Semáforo</h1>
+
+    <!-- Timer -->
+    <div class="timer-circle" id="timer">3</div>
+
+    <!-- Semáforo -->
+    <div class="semaforo-box">
+        <div class="luz vermelha apagada" id="luz-vermelha"></div>
+        <div class="luz amarela apagada" id="luz-amarela"></div>
+        <div class="luz verde apagada" id="luz-verde"></div>
+    </div>
+    <div class="haste"></div>
+    <div class="base"></div>
+
+    <!-- Botão -->
+    <button class="btn-trocar mt-10" id="btn-trocar" onclick="trocarCor()">
+        Trocar Cor
+    </button>
+
+    <!-- Indicador da cor atual -->
+    <p class="text-white/70 mt-6 text-sm" id="status-text">Cor atual: Vermelho</p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

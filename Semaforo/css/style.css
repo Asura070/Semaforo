@@ -1,0 +1,120 @@
+/* Caixa do semáforo */
+.semaforo-box {
+    background: #1a1a1a;
+    border-radius: 24px;
+    padding: 20px;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    border: 3px solid #333;
+}
+
+/* Cada luz do semáforo */
+.luz {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 12px auto;
+    transition: all 0.3s ease;
+    border: 3px solid #444;
+    position: relative;
+}
+
+/* Estado apagado (padrão) */
+.luz.apagada {
+    opacity: 0.25;
+    box-shadow: none;
+}
+
+/* Luz vermelha acesa */
+.luz.vermelha.acesa {
+    background: #ff3333;
+    opacity: 1;
+    box-shadow:
+        0 0 30px rgba(255, 51, 51, 0.8),
+        0 0 60px rgba(255, 51, 51, 0.4),
+        inset 0 -10px 20px rgba(0, 0, 0, 0.3),
+        inset 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Luz amarela acesa */
+.luz.amarela.acesa {
+    background: #ffcc00;
+    opacity: 1;
+    box-shadow:
+        0 0 30px rgba(255, 204, 0, 0.8),
+        0 0 60px rgba(255, 204, 0, 0.4),
+        inset 0 -10px 20px rgba(0, 0, 0, 0.3),
+        inset 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Luz verde acesa */
+.luz.verde.acesa {
+    background: #33cc33;
+    opacity: 1;
+    box-shadow:
+        0 0 30px rgba(51, 204, 51, 0.8),
+        0 0 60px rgba(51, 204, 51, 0.4),
+        inset 0 -10px 20px rgba(0, 0, 0, 0.3),
+        inset 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Haste do semáforo */
+.haste {
+    width: 20px;
+    height: 80px;
+    background: #333;
+    margin: 0 auto;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Base do semáforo */
+.base {
+    width: 80px;
+    height: 16px;
+    background: #444;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Timer circular */
+.timer-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Botão */
+.btn-trocar {
+    background: white;
+    color: #1e3a8a;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-trocar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-trocar:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
