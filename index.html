@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalho de Web - Semáforo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <center>
+        <h1>🚦 Semáforo</h1>
+
+        <div id="timer">3</div>
+
+        <div class="semaforo">
+            <div class="luz" id="vermelho"></div>
+            <div class="luz" id="amarelo"></div>
+            <div class="luz" id="verde"></div>
+        </div>
+        <div class="haste"></div>
+        <div class="base"></div>
+
+        <button onclick="trocarCor()">Trocar Cor</button>
+
+        <p id="status-text">Cor atual: Vermelho</p>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
